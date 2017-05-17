@@ -3,11 +3,11 @@ $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		
 		
-		$('#izquierda').on("swipeleft",function(){
+		$('#Izquierda').on("swipeleft",function(){
 			navigator.notification.alert("Deslizo a la izquierda",function(){"Aplicacion7","Aceptar"});
 		});
 		
-		$('#derecha').on("swiperight",function(){
+		$('#Derecha').on("swiperight",function(){
 			navigator.notification.confirm("¿Que quieres hacer?",function(opt){
 				switch(opt)
 				{
@@ -19,7 +19,7 @@ $(document).ready(function(e) {
 					navigator.notification.vibrate(1000);
 					break;
 				}
-			},"Aplicacion8","Beep, vibrar,cancelar");
+			},"Aplicacion7","Beep, vibrar,cancelar");
 			
 		});
 	},false);
